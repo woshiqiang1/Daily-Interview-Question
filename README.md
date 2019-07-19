@@ -11,6 +11,94 @@
 
 ## 今日面试题
 
+2019-07-19
+
+> 第 109 题：扩展题，请写出如下代码的打印结果
+>
+> ```js
+> var name = 'Tom';
+> (function() {
+>     if (typeof name == 'undefined') {
+>         name = 'Jack';
+>         console.log('Goodbye ' + name);
+>     } else {
+>         console.log('Hello ' + name);
+>     }
+> })();
+> ```
+
+
+
+公司：京东
+
+解析：[第 109 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/198)
+
+<br/>
+
+
+
+
+## 本周汇总
+
+2019-07-18
+
+> 第 108 题：请写出如下代码的打印结果
+>
+> ```js
+> var name = 'Tom';
+> (function() {
+>     if (typeof name == 'undefined') {
+>         var name = 'Jack';
+>         console.log('Goodbye ' + name);
+>     } else {
+>         console.log('Hello ' + name);
+>     }
+> })();
+> ```
+
+
+
+公司：京东
+
+解析：[第 108 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/190)
+
+<br/>
+
+
+
+2019-07-17
+
+> 第 107 题：考虑到性能问题，如何快速从一个巨大的数组中随机获取部分元素。
+>
+> 比如有个数组有100K个元素，从中不重复随机选取10K个元素。
+
+
+
+解析：[第 107 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/187)
+
+<br/>
+
+
+
+2019-07-16
+
+> 第 106 题：分别写出如下代码的返回值
+>
+> ```js
+> String('11') == new String('11');
+> String('11') === new String('11');
+> ```
+
+
+
+公司：京东
+
+解析：[第 106 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/180)
+
+<br/>
+
+
+
 2019-07-15
 
 > 第 105 题：编程题
@@ -36,9 +124,6 @@
 <br/>
 
 
-
-
-## 本周汇总
 
 2019-07-12
 
