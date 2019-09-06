@@ -4,34 +4,22 @@
 
 工作日每天一道大厂前端面试题，一年后再回头，会感谢曾经努力的自己！
 
+[线上版本阅读更流畅，点击阅读](https://muyiy.cn/question/)
+
 <br/>
 
 
 
 
 ## 今日面试题
+2019-09-04
 
-2019-07-19
-
-> 第 109 题：扩展题，请写出如下代码的打印结果
+> 第 137 题：如何在 H5 和小程序项目中计算白屏时间和首屏时间，说说你的思路
 >
-> ```js
-> var name = 'Tom';
-> (function() {
->     if (typeof name == 'undefined') {
->         name = 'Jack';
->         console.log('Goodbye ' + name);
->     } else {
->         console.log('Hello ' + name);
->     }
-> })();
-> ```
 
 
 
-公司：京东
-
-解析：[第 109 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/198)
+解析：[第 137 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/272)
 
 <br/>
 
@@ -39,188 +27,204 @@
 
 
 ## 本周汇总
+2019-09-03
 
-2019-07-18
+> 第 136 题：如何实现骨架屏，说说你的思路
 
-> 第 108 题：请写出如下代码的打印结果
+
+
+解析：[第 136 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/270)
+
+<br/>
+
+
+
+2019-09-02
+
+> 第 135 题：算法题（盛大）
+>
+> 在一个字符串数组中有红、黄、蓝三种颜色的球，且个数不相等、顺序不一致，请为该数组排序。使得排序后数组中球的顺序为:黄、红、蓝。
+>
+> 例如：红蓝蓝黄红黄蓝红红黄红，排序后为：黄黄黄红红红红红蓝蓝蓝。
+
+
+
+解析：[第 135 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/266)
+
+<br/>
+
+
+
+2019-08-30
+
+> 第 134 题：求两个日期中间的有效日期
+>
+> 如 2015-2-8 到 2015-3-3，返回【2015-2-8 2015-2-9...】
+
+
+
+解析：[第 134 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/264)
+
+<br/>
+
+
+
+2019-08-29
+
+> 第 133 题：用 setTimeout 实现 setInterval，阐述实现的效果与 setInterval 的差异
+
+
+
+解析：[第 133 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/259)
+
+<br/>
+
+
+
+2019-08-27
+
+> 第 132 题：实现一个 Dialog 类，Dialog可以创建 dialog 对话框，对话框支持可拖拽（腾讯）
+
+
+
+解析：[第 132 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/257)
+
+<br/>
+
+
+
+2019-08-26
+
+> 第 131 题：接口如何防刷
+
+
+
+解析：[第 131 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/254)
+
+<br/>
+
+
+
+2019-08-23
+
+> 第 130 题：输出以下代码执行结果，大致时间就好（不同于上题）
 >
 > ```js
-> var name = 'Tom';
-> (function() {
->     if (typeof name == 'undefined') {
->         var name = 'Jack';
->         console.log('Goodbye ' + name);
->     } else {
->         console.log('Hello ' + name);
->     }
-> })();
-> ```
-
-
-
-公司：京东
-
-解析：[第 108 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/190)
-
-<br/>
-
-
-
-2019-07-17
-
-> 第 107 题：考虑到性能问题，如何快速从一个巨大的数组中随机获取部分元素。
->
-> 比如有个数组有100K个元素，从中不重复随机选取10K个元素。
-
-
-
-解析：[第 107 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/187)
-
-<br/>
-
-
-
-2019-07-16
-
-> 第 106 题：分别写出如下代码的返回值
->
-> ```js
-> String('11') == new String('11');
-> String('11') === new String('11');
-> ```
-
-
-
-公司：京东
-
-解析：[第 106 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/180)
-
-<br/>
-
-
-
-2019-07-15
-
-> 第 105 题：编程题
->
-> url有三种情况
->
-> ```js
-> https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=&local_province_id=33
-> https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=800&local_province_id=33
-> https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=800,700&local_province_id=33
-> ```
->
-> 匹配elective后的数字输出（写出你认为的最优解法）:
->
-> ```js
-> [] || ['800'] || ['800','700']
-> ```
-
-
-
-解析：[第 105 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/177)
-
-<br/>
-
-
-
-2019-07-12
-
-> 第 104 题：模拟 localStorage 时如何实现过期时间功能
-
-公司：阿里
-
-解析：[第 104 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/171)
-
-<br/>
-
-
-2019-07-11
-
-> 第 103 题：模拟实现一个 localStorage
-
-公司：阿里
-
-解析：[第 103 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/166)
-
-<br/>
-
-
-
-2019-07-10
-
-> 第 102 题：不用加减乘除运算符，求整数的7倍
-
-解析：[第 102 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/161)
-
-<br/>
-
-
-
-2019-07-09
-
-> 第 101 题：修改以下 print 函数，使之输出 0 到 99，或者 99 到 0
->
-> 要求：
->
-> 1、只能修改 `setTimeout` 到 `Math.floor(Math.random() * 1000` 的代码
->
-> 2、不能修改 `Math.floor(Math.random() * 1000`
->
-> 3、不能使用全局变量
->
-> ```js
-> function print(n){
->   setTimeout(() => {
->     console.log(n);
->   }, Math.floor(Math.random() * 1000));
+> function wait() {
+>   return new Promise(resolve =>
+>     setTimeout(resolve, 10 * 1000)
+>   )
 > }
-> for(var i = 0; i < 100; i++){
->   print(i);
+> 
+> async function main() {
+>   console.time();
+>   await wait();
+>   await wait();
+>   await wait();
+>   console.timeEnd();
 > }
+> main();
 > ```
 
 
 
-公司：头条
-
-解析：[第 101 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/158)
+解析：[第 130 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/253)
 
 <br/>
 
 
 
-2019-07-08
+2019-08-22
 
-> 第 100 题：请写出如下代码的打印结果
+> 第 129 题：输出以下代码执行结果
 >
 > ```js
-> function Foo() {
->     Foo.a = function() {
->         console.log(1)
->     }
->     this.a = function() {
->         console.log(2)
->     }
+> function wait() {
+>   return new Promise(resolve =>
+>     setTimeout(resolve, 10 * 1000)
+>   )
 > }
-> Foo.prototype.a = function() {
->     console.log(3)
+> 
+> async function main() {
+>   console.time();
+>   const x = wait();
+>   const y = wait();
+>   const z = wait();
+>   await x;
+>   await y;
+>   await z;
+>   console.timeEnd();
 > }
-> Foo.a = function() {
->     console.log(4)
-> }
-> Foo.a();
-> let obj = new Foo();
-> obj.a();
-> Foo.a();
+> main();
 > ```
 
 
 
-公司：京东
+解析：[第 129 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/251)
 
-解析：[第 100 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/155)
+<br/>
+
+
+
+2019-08-20
+
+> 第 128 题：Http 状态码 301 和 302 的应用场景分别是什么
+
+
+
+解析：[第 128 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/249)
+
+<br/>
+
+
+
+2019-08-19
+
+> 第 127 题：如何用 css 或 js 实现多行文本溢出省略效果，考虑兼容性
+
+
+
+解析：[第 127 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/246)
+
+
+
+2019-08-15
+
+> 第 126 题：扑克牌问题
+>
+> 有一堆扑克牌，将牌堆第一张放到桌子上，再将接下来的牌堆的第一张放到牌底，如此往复；
+>
+> 最后桌子上的牌顺序为： (牌底) 1,2,3,4,5,6,7,8,9,10,11,12,13 (牌顶)；
+>
+> 问：原来那堆牌的顺序，用函数实现。
+
+
+
+解析：[第 126 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/245)
+
+<br/>
+
+
+
+2019-08-13
+
+> 第 125 题：如何将`[{id: 1}, {id: 2, pId: 1}, ...]` 的重复数组（有重复数据）转成树形结构的数组 `[{id: 1, child: [{id: 2, pId: 1}]}, ...]` （需要去重）
+
+
+
+解析：[第 125 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/243)
+
+<br/>
+
+
+
+2019-08-12
+
+> 第 124 题：永久性重定向（301）和临时性重定向（302）对 SEO 有什么影响
+
+
+
+解析：[第 124 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/241)
 
 <br/>
 
@@ -246,7 +250,7 @@
 
 
 
-## 交流
+## 联系我
 
 进阶系列文章汇总如下，觉得不错点个 star，欢迎 **加群** 互相学习。
 

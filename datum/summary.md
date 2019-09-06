@@ -102,6 +102,26 @@
   - [第 97 题：React 和 Vue 的 diff 时间复杂度从 O(n^3) 优化到 O(n) ，那么 O(n^3) 和 O(n) 是如何计算出来的？](#%E7%AC%AC-97-%E9%A2%98react-%E5%92%8C-vue-%E7%9A%84-diff-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BB%8E-on%5E3-%E4%BC%98%E5%8C%96%E5%88%B0-on-%E9%82%A3%E4%B9%88-on%5E3-%E5%92%8C-on-%E6%98%AF%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E5%87%BA%E6%9D%A5%E7%9A%84)
   - [第 98 题：写出如下代码的打印结果](#%E7%AC%AC-98-%E9%A2%98%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%9C)
   - [第 99 题：编程算法题](#%E7%AC%AC-99-%E9%A2%98%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95%E9%A2%98)
+  - [第 100 题：请写出如下代码的打印结果](#%E7%AC%AC-100-%E9%A2%98%E8%AF%B7%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%9C)
+  - [第 101 题：修改以下 print 函数，使之输出 0 到 99，或者 99 到 0](#%E7%AC%AC-101-%E9%A2%98%E4%BF%AE%E6%94%B9%E4%BB%A5%E4%B8%8B-print-%E5%87%BD%E6%95%B0%E4%BD%BF%E4%B9%8B%E8%BE%93%E5%87%BA-0-%E5%88%B0-99%E6%88%96%E8%80%85-99-%E5%88%B0-0)
+  - [第 102 题：不用加减乘除运算符，求整数的7倍](#%E7%AC%AC-102-%E9%A2%98%E4%B8%8D%E7%94%A8%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4%E8%BF%90%E7%AE%97%E7%AC%A6%E6%B1%82%E6%95%B4%E6%95%B0%E7%9A%847%E5%80%8D)
+  - [第 103 题：模拟实现一个 localStorage](#%E7%AC%AC-103-%E9%A2%98%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA-localstorage)
+  - [第 104 题：模拟 localStorage 时如何实现过期时间功能](#%E7%AC%AC-104-%E9%A2%98%E6%A8%A1%E6%8B%9F-localstorage-%E6%97%B6%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E8%BF%87%E6%9C%9F%E6%97%B6%E9%97%B4%E5%8A%9F%E8%83%BD)
+  - [第 105 题：编程题](#%E7%AC%AC-105-%E9%A2%98%E7%BC%96%E7%A8%8B%E9%A2%98)
+  - [第 106 题：分别写出如下代码的返回值](#%E7%AC%AC-106-%E9%A2%98%E5%88%86%E5%88%AB%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC)
+  - [第 107 题：考虑到性能问题，如何快速从一个巨大的数组中随机获取部分元素。](#%E7%AC%AC-107-%E9%A2%98%E8%80%83%E8%99%91%E5%88%B0%E6%80%A7%E8%83%BD%E9%97%AE%E9%A2%98%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BB%8E%E4%B8%80%E4%B8%AA%E5%B7%A8%E5%A4%A7%E7%9A%84%E6%95%B0%E7%BB%84%E4%B8%AD%E9%9A%8F%E6%9C%BA%E8%8E%B7%E5%8F%96%E9%83%A8%E5%88%86%E5%85%83%E7%B4%A0)
+  - [第 108 题：请写出如下代码的打印结果](#%E7%AC%AC-108-%E9%A2%98%E8%AF%B7%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%9C)
+  - [第 109 题：扩展题，请写出如下代码的打印结果](#%E7%AC%AC-109-%E9%A2%98%E6%89%A9%E5%B1%95%E9%A2%98%E8%AF%B7%E5%86%99%E5%87%BA%E5%A6%82%E4%B8%8B%E4%BB%A3%E7%A0%81%E7%9A%84%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%9C)
+  - [第 110 题：编程题，请写一个函数，完成以下功能](#%E7%AC%AC-110-%E9%A2%98%E7%BC%96%E7%A8%8B%E9%A2%98%E8%AF%B7%E5%86%99%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E5%AE%8C%E6%88%90%E4%BB%A5%E4%B8%8B%E5%8A%9F%E8%83%BD)
+  - [第 111 题：编程题，写个程序把 entry 转换成如下对象](#%E7%AC%AC-111-%E9%A2%98%E7%BC%96%E7%A8%8B%E9%A2%98%E5%86%99%E4%B8%AA%E7%A8%8B%E5%BA%8F%E6%8A%8A-entry-%E8%BD%AC%E6%8D%A2%E6%88%90%E5%A6%82%E4%B8%8B%E5%AF%B9%E8%B1%A1)
+  - [第 112 题：编程题，写个程序把 entry 转换成如下对象（跟昨日题目相反）](#%E7%AC%AC-112-%E9%A2%98%E7%BC%96%E7%A8%8B%E9%A2%98%E5%86%99%E4%B8%AA%E7%A8%8B%E5%BA%8F%E6%8A%8A-entry-%E8%BD%AC%E6%8D%A2%E6%88%90%E5%A6%82%E4%B8%8B%E5%AF%B9%E8%B1%A1%E8%B7%9F%E6%98%A8%E6%97%A5%E9%A2%98%E7%9B%AE%E7%9B%B8%E5%8F%8D)
+  - [第 113 题：编程题，根据以下要求，写一个数组去重函数（蘑菇街）](#%E7%AC%AC-113-%E9%A2%98%E7%BC%96%E7%A8%8B%E9%A2%98%E6%A0%B9%E6%8D%AE%E4%BB%A5%E4%B8%8B%E8%A6%81%E6%B1%82%E5%86%99%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E5%87%BD%E6%95%B0%E8%98%91%E8%8F%87%E8%A1%97)
+  - [第 114 题：编程题，找出字符串中连续出现最多的字符和个数（蘑菇街）](#%E7%AC%AC-114-%E9%A2%98%E7%BC%96%E7%A8%8B%E9%A2%98%E6%89%BE%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E8%BF%9E%E7%BB%AD%E5%87%BA%E7%8E%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%97%E7%AC%A6%E5%92%8C%E4%B8%AA%E6%95%B0%E8%98%91%E8%8F%87%E8%A1%97)
+  - [第 115 题：写一个单向链数据结构的 js 实现并标注复杂度（水滴筹）](#%E7%AC%AC-115-%E9%A2%98%E5%86%99%E4%B8%80%E4%B8%AA%E5%8D%95%E5%90%91%E9%93%BE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9A%84-js-%E5%AE%9E%E7%8E%B0%E5%B9%B6%E6%A0%87%E6%B3%A8%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%B0%B4%E6%BB%B4%E7%AD%B9)
+  - [第 116 题：输出以下代码运行结果](#%E7%AC%AC-116-%E9%A2%98%E8%BE%93%E5%87%BA%E4%BB%A5%E4%B8%8B%E4%BB%A3%E7%A0%81%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C)
+  - [第 117 题：介绍下 http1.0、1.1、2.0 协议的区别？](#%E7%AC%AC-117-%E9%A2%98%E4%BB%8B%E7%BB%8D%E4%B8%8B-http101120-%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%8C%BA%E5%88%AB)
+  - [第 118 题：vue 渲染大量数据时应该怎么优化？](#%E7%AC%AC-118-%E9%A2%98vue-%E6%B8%B2%E6%9F%93%E5%A4%A7%E9%87%8F%E6%95%B0%E6%8D%AE%E6%97%B6%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E4%BC%98%E5%8C%96)
+  - [第 119 题：vue 如何优化首页的加载速度？vue 首页白屏是什么问题引起的？如何解决呢？](#%E7%AC%AC-119-%E9%A2%98vue-%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96%E9%A6%96%E9%A1%B5%E7%9A%84%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6vue-%E9%A6%96%E9%A1%B5%E7%99%BD%E5%B1%8F%E6%98%AF%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98%E5%BC%95%E8%B5%B7%E7%9A%84%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E5%91%A2)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1298,6 +1318,431 @@ console.log(webSite.siteUrl);
 公司：bilibili
 
 解析：[第 99 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/153)
+
+<br/>
+
+
+
+### 第 100 题：请写出如下代码的打印结果
+
+> ```js
+> function Foo() {
+> Foo.a = function() {
+>   console.log(1)
+> }
+> this.a = function() {
+>   console.log(2)
+> }
+> }
+> Foo.prototype.a = function() {
+> console.log(3)
+> }
+> Foo.a = function() {
+> console.log(4)
+> }
+> Foo.a();
+> let obj = new Foo();
+> obj.a();
+> Foo.a();
+> ```
+
+
+
+公司：京东
+
+解析：[第 100 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/155)
+
+<br/>
+
+
+
+### 第 101 题：修改以下 print 函数，使之输出 0 到 99，或者 99 到 0
+
+> 要求：
+>
+> 1、只能修改 `setTimeout` 到 `Math.floor(Math.random() * 1000` 的代码
+>
+> 2、不能修改 `Math.floor(Math.random() * 1000`
+>
+> 3、不能使用全局变量
+>
+> ```js
+> function print(n){
+> setTimeout(() => {
+>  console.log(n);
+> }, Math.floor(Math.random() * 1000));
+> }
+> for(var i = 0; i < 100; i++){
+> print(i);
+> }
+> ```
+
+
+
+公司：头条
+
+解析：[第 101 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/158)
+
+<br/>
+
+
+
+### 第 102 题：不用加减乘除运算符，求整数的7倍
+
+解析：[第 102 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/161)
+
+<br/>
+
+
+
+### 第 103 题：模拟实现一个 localStorage
+
+公司：阿里
+
+解析：[第 103 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/166)
+
+<br/>
+
+
+
+### 第 104 题：模拟 localStorage 时如何实现过期时间功能
+
+公司：阿里
+
+解析：[第 104 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/171)
+
+<br/>
+
+
+
+### 第 105 题：编程题
+
+> url有三种情况
+>
+> ```js
+> https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=&local_province_id=33
+> https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=800&local_province_id=33
+> https://www.xx.cn/api?keyword=&level1=&local_batch_id=&elective=800,700&local_province_id=33
+> ```
+>
+> 匹配elective后的数字输出（写出你认为的最优解法）:
+>
+> ```js
+> [] || ['800'] || ['800','700']
+> ```
+
+
+
+解析：[第 105 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/177)
+
+<br/>
+
+
+
+### 第 106 题：分别写出如下代码的返回值
+
+> ```js
+> String('11') == new String('11');
+> String('11') === new String('11');
+> ```
+
+
+
+公司：京东
+
+解析：[第 106 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/180)
+
+<br/>
+
+
+
+### 第 107 题：考虑到性能问题，如何快速从一个巨大的数组中随机获取部分元素。
+
+> 比如有个数组有100K个元素，从中不重复随机选取10K个元素。
+
+
+
+解析：[第 107 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/187)
+
+<br/>
+
+
+
+### 第 108 题：请写出如下代码的打印结果
+
+> ```js
+> var name = 'Tom';
+> (function() {
+>  if (typeof name == 'undefined') {
+>      var name = 'Jack';
+>      console.log('Goodbye ' + name);
+>  } else {
+>      console.log('Hello ' + name);
+>  }
+> })();
+> ```
+
+
+
+公司：京东
+
+解析：[第 108 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/190)
+
+<br/>
+
+
+
+### 第 109 题：扩展题，请写出如下代码的打印结果
+
+> ```js
+> var name = 'Tom';
+> (function() {
+>  if (typeof name == 'undefined') {
+>      name = 'Jack';
+>      console.log('Goodbye ' + name);
+>  } else {
+>      console.log('Hello ' + name);
+>  }
+> })();
+> ```
+
+
+
+公司：京东
+
+解析：[第 109 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/198)
+
+<br/>
+
+
+
+### 第 110 题：编程题，请写一个函数，完成以下功能
+
+> 输入
+> ``'1, 2, 3, 5, 7, 8, 10'``
+> 输出
+> ``'1~3, 5, 7~8, 10'``
+
+
+
+解析：[第 110 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/201)
+
+<br/>
+
+
+
+### 第 111 题：编程题，写个程序把 entry 转换成如下对象
+
+> ```js
+> var entry = {
+> a: {
+> b: {
+>   c: {
+>     dd: 'abcdd'
+>   }
+> },
+> d: {
+>   xx: 'adxx'
+> },
+> e: 'ae'
+> }
+> }
+> 
+> // 要求转换成如下对象
+> var output = {
+> 'a.b.c.dd': 'abcdd',
+> 'a.d.xx': 'adxx',
+> 'a.e': 'ae'
+> }
+> ```
+
+
+
+解析：[第 111 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/206)
+
+<br/>
+
+
+
+### 第 112 题：编程题，写个程序把 entry 转换成如下对象（跟昨日题目相反）
+
+> ```js
+> var entry = {
+> 'a.b.c.dd': 'abcdd',
+> 'a.d.xx': 'adxx',
+> 'a.e': 'ae'
+> }
+> 
+> // 要求转换成如下对象
+> var output = {
+> a: {
+> b: {
+>   c: {
+>     dd: 'abcdd'
+>   }
+> },
+> d: {
+>   xx: 'adxx'
+> },
+> e: 'ae'
+> }
+> }
+> ```
+
+
+
+解析：[第 112 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/212)
+
+<br/>
+
+
+
+### 第 113 题：编程题，根据以下要求，写一个数组去重函数（蘑菇街）
+
+> 1. 如传入的数组元素为`[123, "meili", "123", "mogu", 123]`，则输出：`[123, "meili", "123", "mogu"]`
+> 2. 如传入的数组元素为`[123, [1, 2, 3], [1, "2", 3], [1, 2, 3], "meili"]`，则输出：`[123, [1, 2, 3], [1, "2", 3], "meili"]`
+> 3. 如传入的数组元素为`[123, {a: 1}, {a: {b: 1}}, {a: "1"}, {a: {b: 1}}, "meili"]`，则输出：`[123, {a: 1}, {a: {b: 1}}, {a: "1"}, "meili"]`
+
+
+
+解析：[第 113 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/215)
+
+<br/>
+
+
+
+### 第 114 题：编程题，找出字符串中连续出现最多的字符和个数（蘑菇街）
+
+> ```js
+> 'abcaakjbb' => {'a':2,'b':2}
+> 'abbkejsbcccwqaa' => {'c':3}
+> ```
+
+
+
+解析：[第 114 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/220)
+
+<br/>
+
+
+
+### 第 115 题：写一个单向链数据结构的 js 实现并标注复杂度（水滴筹）
+
+
+
+解析：[第 115 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/226)
+
+<br/>
+
+
+
+### 第 116 题：输出以下代码运行结果
+
+> ```js
+> 1 + "1"
+> 
+> 2 * "2"
+> 
+> [1, 2] + [2, 1]
+> 
+> "a" + + "b"
+> ```
+
+
+
+解析：[第 116 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/229)
+
+<br/>
+
+
+
+### 第 117 题：介绍下 http1.0、1.1、2.0 协议的区别？
+
+
+
+解析：[第 117 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/232)
+
+<br/>
+
+
+
+### 第 118 题：vue 渲染大量数据时应该怎么优化？
+
+
+
+解析：[第 118 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/233)
+
+<br/>
+
+
+
+### 第 119 题：vue 如何优化首页的加载速度？vue 首页白屏是什么问题引起的？如何解决呢？
+
+
+
+解析：[第 119 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/234)
+
+<br/>
+
+
+
+### 第 120 题：为什么 for 循环嵌套顺序会影响性能？
+
+```js
+var t1 = new Date().getTime()
+for (let i = 0; i < 100; i++) {
+  for (let j = 0; j < 1000; j++) {
+    for (let k = 0; k < 10000; k++) {
+    }
+  }
+}
+var t2 = new Date().getTime()
+console.log('first time', t2 - t1)
+
+for (let i = 0; i < 10000; i++) {
+  for (let j = 0; j < 1000; j++) {
+    for (let k = 0; k < 100; k++) {
+
+    }
+  }
+}
+var t3 = new Date().getTime()
+console.log('two time', t3 - t2)
+```
+
+
+
+解析：[第 120 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/235)
+
+<br/>
+
+
+
+### 第 121 题：统计 1 ~ n 整数中出现 1 的次数。
+
+例如统计 1 ~ 400W 出现 1 的次数。
+
+
+
+解析：[第 121 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/237)
+
+<br/>
+
+
+
+### 第 122 题：webpack 打包 vue 速度太慢怎么办？
+
+解析：[第 122 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/238)
+
+<br/>
+
+
+
+### 第 123 题：vue 是如何对数组方法进行变异的？例如 push、pop、splice 等方法
+
+
+
+解析：[第 123 题](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/239)
 
 <br/>
 
